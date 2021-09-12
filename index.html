@@ -79,6 +79,24 @@
 </table>
 <br>
 <hr>
+<br>
+<h3>String Processing</h3>
+<blockquote>String matching algorithms have greatly influenced computer science and play an essential role in various real-world problems. It helps in performing time-efficient tasks in multiple domains. These algorithms are useful in the case of searching a string within another string. String matching is also used in the Database schema, Network systems.</blockquote><br>
+
+<a href="https://www.geeksforgeeks.org/applications-of-string-matching-algorithms/">Source</a><br>
+
+<pre>
+
+  vector<int> z_function_trivial(string s) {
+    int n = (int) s.length();
+    vector<int> z(n);
+    for (int i = 1; i < n; ++i)
+        while (i + z[i] < n && s[z[i]] == s[i + z[i]])
+            ++z[i];
+    return z;
+}
+
+</pre>
 
 <a href="https://github.com/44-563-WebApps-F21/webapps-f21-assignment-3-S545395/blob/main/aboutme.html">Click here know about me</a>
 
